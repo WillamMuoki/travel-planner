@@ -1,13 +1,22 @@
  # Travel Planner (React + Vite + Tailwind)
 
-## Setup
-1. Clone or create folder and add files from this repo.
-2. Install dependencies:
-3. Optional: Create `.env` from `.env.example` and add your Amadeus Client ID / Secret:
-If you do not set env vars, the app uses mock data.
+An online booking and travel planning application built with:
+- React + Vite
+- Tailwind CSS
+- Node.js (future backend)
 
-4. Start dev server:
-5. Open http://localhost:5173
+## Features
+- Search destinations
+- View available travel options
+- Book and manage trips
+
+## Getting Started
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/WillamMuoki/travel-planner.git
+
+2. Start dev server:
+3. Open http://localhost:5173
 
 
 This project uses React Router for navigation and Tailwind for styling.
