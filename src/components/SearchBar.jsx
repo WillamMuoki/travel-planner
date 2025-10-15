@@ -1,23 +1,17 @@
- import { useState } from "react";
-
-export default function SearchBar({ onSearch }) {
-  const [query, setQuery] = useState("");
-
-  const submit = (e) => {
-    e.preventDefault();
-    if (!query.trim()) return;
-    onSearch(query.trim());
-  };
-
+ // src/components/SearchBar.jsx
+import React from "react";
+ 
+// src/components/SearchBar.jsx
+export default function SearchBar({ searchQuery, setSearchQuery }) {
   return (
-    <form onSubmit={submit} className="mt-8 flex justify-center">
+    <div className="flex justify-center my-8">
       <input
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="Search destinations (e.g., Paris, Nairobi)"
-        className="w-full max-w-xl border border-gray-300 p-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-300"
+        type="text"
+        placeholder="Search destinations..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="w-full max-w-md px-4 py-3 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
-      <button className="bg-blue-600 text-white px-5 rounded-r-md">Search</button>
-    </form>
+    </div>
   );
 }

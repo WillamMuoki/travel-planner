@@ -1,13 +1,20 @@
- # Travel Planner (React + Vite + Tailwind)
+ # 🌍 Travel Planner – React + Vite Capstone
 
-## Setup
-1. Clone or create folder and add files from this repo.
-2. Install dependencies:
-3. Optional: Create `.env` from `.env.example` and add your Amadeus Client ID / Secret:
-If you do not set env vars, the app uses mock data.
+A modern web app that allows users to explore and search for travel destinations in Kenya. Built with React, Vite, and Tailwind CSS.
 
-4. Start dev server:
-5. Open http://localhost:5173
+## 🚀 Features
+- Interactive search to filter destinations
+- Dynamic pages for each destination
+- Clean, responsive UI (mobile & desktop)
+- Modular React components
+- Mock API with future integration (Amadeus)
 
+## 🧱 Tech Stack
+React • Vite • Tailwind CSS • React Router • Mock API
 
-This project uses React Router for navigation and Tailwind for styling.
+## 🖥️ How to Run
+```bash
+git clone https://github.com/WillamMuoki/travel-planner.git
+cd travel-planner
+npm install
+npm run dev
